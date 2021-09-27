@@ -3,8 +3,13 @@ package migrator
 import (
 	"bytes"
 	"fmt"
+	log "github.com/sirupsen/logrus"
 	"io"
+	"migrations/migrate/runner/errors"
 	"migrations/migrate/runner/hook"
+	"migrations/migrate/runner/indexstruct"
+	"migrations/migrate/runner/migrator/db"
+	"migrations/migrate/runner/utils"
 	"os"
 	"os/exec"
 	"path/filepath"
@@ -12,13 +17,6 @@ import (
 	"strconv"
 	"sync"
 	"time"
-
-	log "github.com/sirupsen/logrus"
-	"gitlab.xinghuolive.com/birds-backend/phoenix/middleware"
-	"migrations/migrate/runner/errors"
-	"migrations/migrate/runner/indexstruct"
-	"migrations/migrate/runner/migrator/db"
-	"migrations/migrate/runner/utils"
 )
 
 const (

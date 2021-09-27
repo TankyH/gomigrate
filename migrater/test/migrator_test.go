@@ -1,7 +1,6 @@
 package test
 
 import (
-	"gitlab.xinghuolive.com/birds-backend/phoenix/middleware"
 	"migrations/migrate/runner/migrator"
 	"migrations/migrate/runner/migrator/db"
 	"os"

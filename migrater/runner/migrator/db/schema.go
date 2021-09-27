@@ -1,10 +1,7 @@
 package db
 
 import (
-	"gitlab.xinghuolive.com/birds-backend/chameleon/store/postgres/pg"
 	"gitlab.xinghuolive.com/birds-backend/phoenix/models/pgmodels"
-	"gitlab.xinghuolive.com/birds-backend/phoenix/pgu"
-	"gitlab.xinghuolive.com/birds-backend/phoenix/pgu/ddl"
 	"time"
 )
 

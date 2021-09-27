@@ -1,11 +1,5 @@
 package db
 
-import (
-	"gitlab.xinghuolive.com/birds-backend/chameleon/store/postgres/pg"
-	"gitlab.xinghuolive.com/birds-backend/phoenix/pgu"
-	"gitlab.xinghuolive.com/birds-backend/phoenix/pgu/meta"
-)
-
 var (
 	S Schema
 	m meta.Meta
